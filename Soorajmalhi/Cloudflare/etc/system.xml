@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <cloudflare  translate="label" module="cloudflare">                    
+            <label>Cloud Flare</label>
+            <tab>soorajmalhi</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>            
+            <groups>
+                <accountinfo translate="label"> 
+                    <label>Account Info</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                     <fields>
+                        <email translate="label">
+                            <label>Cloud Flare Email</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </email>
+                        <globalkey translate="label">
+                            <label>Cloud Flare Global API Key</label>
+                            <frontend_type>obscure</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </globalkey>
+                    </fields>
+                </accountinfo>
+                <cachefiles translate="label">
+                    <label>Cloud Flare File List</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <css_files translate="label">
+                            <label>CSS File List</label>
+                            <comment>Comma separator value</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </css_files>
+                        <js_files translate="label">
+                            <label>JS File List</label>
+                            <comment>Comma separator value</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </js_files>
+                    </fields>
+                </cachefiles>
+            </groups>
+        </cloudflare>
+    </sections>
+</config>
